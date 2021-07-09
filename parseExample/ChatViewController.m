@@ -29,7 +29,7 @@
     }];
 }
 
-- (void)onTimer {
+- (void)onTimer{
     PFQuery *query = [PFQuery queryWithClassName:@"Message_FBU2021"];
     [query includeKey:@"user"];
     [query orderByDescending:@"createdAt"];
@@ -73,7 +73,7 @@
         cell.usernameLabel.text = [NSString stringWithFormat:@"@%@", user.username];
     } else {
         // No user found, set default username
-        cell.usernameLabel.text = @"@Default_Name";
+        cell.usernameLabel.text = @"@Default Name";
     }
     
 

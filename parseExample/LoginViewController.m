@@ -32,10 +32,8 @@
             preferredStyle:(UIAlertControllerStyleAlert)];
         
             // create an OK action
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
-                                                               style:UIAlertActionStyleDefault
-                                                             handler:^(UIAlertAction * _Nonnull action) {
-                                                                     // handle response here.
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                // handle response here.
                                                              }];
             // add the OK action to the alert controller
             [alert addAction:okAction];
@@ -82,6 +80,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    NSLog(@"Login");
     // Do any additional setup after loading the view.
 }
 - (IBAction)onClickSignup:(id)sender {
